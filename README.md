@@ -5,7 +5,14 @@ Projeto do processo seletivo para o estágio de desenvolvedor.
 
 ## Instalação
 
-Faça o download do projeto para sua máquina. Abra uma janela do terminal no diretório do projeto e execute o seguinte comando:
+Para visualizar este projeto, é necessário ter o Angular instalado em seu sistema. Para isso, instale o Node.js através do link https://nodejs.org/pt-br/download/.
+Após isso, abra uma janela do terminal e execute o comando:
+
+```
+npm install -g @angular/cli
+```
+
+Após a instalação do Angular, faça o download do projeto-web para sua máquina. Abra uma janela do terminal no diretório do projeto e execute o seguinte comando:
 
 ```
 ng serve
