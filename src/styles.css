@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #232323;
+}
+
+hr {
+  background-color: #f3a723;
+  border: none;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.navbar {
+  background-color: #232323;
+  color: #ffffff;
+}
+
+.formContainer mat-toolbar {
+  background-color: #f3a723;
+  color: #ffffff;
+}
+
+.formContainer mat-card {
+  padding: 0px;
+}
+
+.formContainer form {
+  padding: 20px;
+}

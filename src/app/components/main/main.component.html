@@ -1,0 +1,36 @@
+<mat-toolbar>
+    <span class="spacer"></span>
+    <button mat-button [routerLink]="['/login']" routerLinkActive="router-link-active">Login</button>
+    <button mat-button [routerLink]="['/registrar']" routerLinkActive="router-link-active">Registrar</button>
+</mat-toolbar>
+
+<header class="homepage-header">
+
+    <h1 fxLayoutAlign="center center">Página Inicial</h1>
+    <p fxLayoutAlign="center center">Projeto Angular</p>
+
+</header>
+
+<mat-card>
+    <section>
+        <h1>Requisitos de Projeto</h1>
+        <div>
+            <ul>
+                <li>Tela de Login</li>
+                <li>Tela de administração de usuários</li>
+                <li>Autenticação de usuário (login/logout)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h1>Estrutura do Projeto</h1>
+        <ul>
+            <li>Front-end em Angular</li>
+            <li>Back-end em Typescript</li>
+            <li>Comunicação com um banco de dados (SQL Server)</li>
+        </ul>
+
+    </section>
+
+</mat-card>

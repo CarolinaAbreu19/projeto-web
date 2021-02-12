@@ -1,0 +1,11 @@
+<h2>Meus Chamados</h2>
+
+<ul class="chamados">
+  <li *ngFor="let chamado of chamados"
+    [class.selected]="chamado === selectedChamado"
+    (click)="onSelect(chamado)">
+    <span class="badge">{{chamado.id}}</span> {{chamado.name}}
+  </li>
+</ul>
+
+<app-chamado-detail [chamado]="selectedChamado"></app-chamado-detail>

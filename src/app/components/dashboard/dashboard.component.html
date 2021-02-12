@@ -1,0 +1,87 @@
+<mat-drawer-container class="dashboard-container">
+    <mat-drawer #drawer class="sidenav" mode="side">
+
+        <h1>Aplicação Angular</h1>
+        <div *ngIf="showFiller">
+            <p>
+                Este é um projeto de processo seletivo<br>
+                para o cargo de estagiário em desenvolvimento.<br>
+                Esta aplicação possui:
+            </p>
+            <ul>
+                <li>Front-end em Angular</li>
+                <li>Back-end em Typescript</li>
+                <li>Telas de login e registro de usuários</li>
+                <li>Rotas</li>
+            </ul>
+            <p>Os próximos desafios são:</p>
+            <ul>
+                <li>Comunicação com banco de dados</li>
+                <li>Funcionalidades CRUD de usuários</li>
+                <li>Autenticação de login</li>
+                <li>Cadastrar novos usuários</li>
+            </ul>
+            <p>
+                O maior desafio encontrado foi a implementação<br>
+                do back-end e a comunicação com o banco de dados.<br>
+                Com o desenvolvimento desta aplicação, foi<br>
+                possível observar que a implementação adequada<br>
+                do back-end antes do front-end permitiria um<br>
+                resultado mais adequado. 
+            </p>
+
+
+        </div>
+
+        <div fxLayout="column">
+            <button (click)="showFiller = !showFiller" mat-button>
+                Sobre o Projeto
+            </button>
+
+            <button mat-button [routerLink]="['/login']" routerLinkActive="router-link-active">
+                Logout
+            </button>
+        </div>
+
+    </mat-drawer>
+
+
+    <mat-toolbar class="navbar">
+
+        <div class="sidenav-content">
+
+            <button mat-icon-button (click)="drawer.toggle()">
+                <mat-icon aria-hidden="false" aria-label="menu icon">menu</mat-icon>
+            </button>
+
+        </div>
+
+    </mat-toolbar>
+
+    <!--
+    <mat-card>
+        <div>
+
+            <h1>Crud de pessoa</h1>
+            
+            <h3>Salvar</h3>
+            <app-chamado-input></app-chamado-input>
+            
+        </div>
+    </mat-card>
+    -->
+
+    <mat-card>
+        <h1 class="dashboard-title">Funcionalidades para o Usuário</h1>
+
+        <div>
+            <app-chamados></app-chamados>
+            <app-messages></app-messages>
+        </div>
+
+
+    </mat-card>
+
+
+
+</mat-drawer-container>

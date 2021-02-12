@@ -1,0 +1,48 @@
+<body>
+
+    <mat-toolbar class="navbar">
+
+        <span>Aplicação Angular</span>
+
+        <span class="spacer"></span>
+
+        <button mat-icon-button [routerLink]="['/']" routerLinkActive="router-link-active">
+            <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>
+        </button>
+
+    </mat-toolbar>
+
+    <div fxLayoutAlign="center center" fxFlexFill class="formContainer">
+
+        <mat-card fxFlex="50">
+
+            <mat-toolbar>Cadastrar Novo Usuário</mat-toolbar>
+
+            <form fxLayoutAlign="stretch" fxLayout="column">
+
+                
+
+                <mat-form-field>
+                    <input matInput placeholder="Nome completo">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Ex.: seuemail@provedor.com">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput type="password" placeholder="Senha">
+                </mat-form-field>
+
+
+
+                <button mat-button>Cadastrar</button>
+
+            </form>
+
+        </mat-card>
+
+    </div>
+
+</body>

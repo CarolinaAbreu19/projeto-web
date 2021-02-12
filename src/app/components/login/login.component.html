@@ -1,0 +1,40 @@
+<mat-toolbar class="navbar">
+
+  <span>Aplicação Angular</span>
+
+  <span class="spacer"></span>
+
+  <button mat-icon-button [routerLink]="['/']" routerLinkActive="router-link-active">
+    <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>
+  </button>
+
+</mat-toolbar>
+
+<div fxLayoutAlign="center center" fxFlexFill class="formContainer">
+
+  <mat-card fxFlex="25">
+
+    <mat-toolbar>Autenticação</mat-toolbar>
+
+    <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+
+      <mat-form-field>
+        <input matInput placeholder="Usuário">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="password" placeholder="Senha">
+      </mat-form-field>
+
+      <button mat-button [routerLink]="['/dashboard']" routerLinkActive="router-link-active"  type="submit">Login</button>
+
+
+      <button mat-button [routerLink]="['/registrar']" routerLinkActive="router-link-active">Registrar</button>
+
+
+
+    </form>
+
+  </mat-card>
+
+</div>
